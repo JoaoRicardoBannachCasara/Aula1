@@ -1,0 +1,46 @@
+body{
+     background-image:url("fundo.jpg");
+	 background-repeat: no repeat ;
+	 
+	 background-size; 100%;
+}
+
+h1{
+	font-size: 50px;
+	color: red;
+	text-align: center;
+	text-shadow:5px 5px 10px black;
+}
+
+.p1{
+	font-size: 25px;
+	text-align: justify;
+	text-indent: 50px;
+	margin: 30px;
+	color:white;
+}
+.p2{font-size: 25px;
+	text-align: justify;
+	text-indent: 50px;
+	margin: 30px;
+	color:red;}
+.p3{letter-spacing: 25px;
+     color: red;
+	 text-align: center;
+}
+.image{
+	background-color:red;
+	text-align: center;
+	border-radius:30px;
+	width : 200px;
+}
+.fan{background-color:red;
+	text-align: center;
+	width : 200px;
+}
+.fan:hover{
+	border-radius: 50px;
+}
+.h1:hover{
+	text-decoration: underline overline;
+	}
