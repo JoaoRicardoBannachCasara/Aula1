@@ -1,0 +1,101 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Filmes</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo ao Site de Filmes</h1>
+    <p>Descubra os melhores filmes, trailers e muito mais!</p>
+</header>
+
+<nav>
+    <a href="#mapa">Mapa</a>
+    <a href="#formulario">Formulário</a>
+    <a href="#videos">Vídeos</a>
+</nav>
+
+<div class="container">
+    <!-- Seção de Filmes -->
+    <section>
+        <h2>Filmes Populares</h2>
+        <div class="movie-card">
+            <img src="senhordosaneis.jpg" alt="Filme 1">
+            <a href="https://www.imdb.com/title/tt0120737/?ref_=fn_al_tt_3">O Senhor dos Anéis</a>
+        </div>
+        <div class="movie-card">
+            <img src="matrix.jpg" alt="Filme 2">
+            <a href="https://www.imdb.com/title/tt0133093/?ref_=fn_al_tt_1">Matrix</a>
+        </div>
+        <div class="movie-card">
+            <img src="ultimato.jpg" alt="Filme 3">
+            <a href="https://www.imdb.com/title/tt4154796/?ref_=fn_al_tt_1">Vingadores: Ultimato</a>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section id="mapa">
+        <h2>Encontre um Cinema</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.818118432551!2d-49.29582135374928!3d-25.477748077006936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35d8fd77e69%3A0x7e40791e81a1e36c!2sShopping%20Palladium!5e0!3m2!1spt-BR!2sbr!4v1732140422088!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> <style="height: 400px;"></div></iframe>
+    </section>
+
+    <!-- Formulário -->
+    <section id="formulario">
+        <h2>Inscreva-se para Novidades sobre Filmes</h2>
+        <form action="#" method="POST" class="form-container">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="genero">Gênero Preferido:</label>
+            <select id="genero" name="genero" required>
+                <option value="acao">Ação</option>
+                <option value="drama">Drama</option>
+                <option value="comedia">Comédia</option>
+                <option value="romance">Romance</option>
+            </select><br><br>
+
+            <label for="comentarios">Comentários:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+            <label for="assinatura">Gostaria de receber novidades por email?</label>
+            <input type="checkbox" id="assinatura" name="assinatura"><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Vídeo -->
+    <section id="videos">
+        <h2>Trailer do Filme</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Egk4gLv6oWo?si=9D_sphVUzd1sGMRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 João Ricardo & Eduardo Cicaida. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+<script>
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -23.550520, lng: -46.633308 },
+            zoom: 12,
+        });
+
+        const marker = new google.maps.Marker({
+            position: { lat: -23.550520, lng: -46.633308 },
+            map: map,
+            title: "Cinema XYZ",
+        });
+    }
+</script>
+
+</body>
+</html>
