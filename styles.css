@@ -1,0 +1,88 @@
+body {
+	color:black;
+    font-family: Arial, sans-serif;
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#1C1C1C;
+    color: 	#D2691E;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+	
+    text-align: center;
+    background-color:#363636;
+    padding: 10px 0;
+}
+
+nav a {
+    color: 	#D2691E;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Container principal */
+.container {
+    margin: 20px;
+}
+
+/* Cartões de filmes */
+.movie-card {
+    display: inline-block;
+    width: 300px;
+    margin: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: #A9A9A9;
+    border-radius: 8px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.movie-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.movie-card a:hover {
+    color: #f39c12;
+}
+
+/* Formulário */
+.form-container {
+    background-color:#A9A9A9;
+    padding: 20px;
+    border-radius:10px;
+   
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Mapa */
+#map {
+	margin-align: center;
+    height: 100px;
+    width: 100%;
+}
